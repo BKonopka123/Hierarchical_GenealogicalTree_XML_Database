@@ -1,0 +1,3 @@
+USE master;
+
+DROP DATABASE IF EXISTS HXML;

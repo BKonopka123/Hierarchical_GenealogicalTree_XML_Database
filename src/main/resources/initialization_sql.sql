@@ -1,0 +1,20 @@
+USE master;
+
+DROP DATABASE IF EXISTS HXML;
+
+CREATE DATABASE [HXML]
+ON
+(NAME = N'HXML',
+    FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\HXML.mdf',
+    SIZE = 10,
+    MAXSIZE = 20,
+    FILEGROWTH = 2)
+LOG ON
+(NAME = N'HXML_Log',
+    FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\HXML_Log.ldf',
+    SIZE = 5,
+    MAXSIZE = 20,
+    FILEGROWTH = 2);
+
+
+
